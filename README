@@ -1,0 +1,4 @@
+This is an instrumented version of FLUP.  It uses the procname python module (linux only available at: http://code.google.com/p/procname/) to set the proctitle of the fastcgi processes to reflect the source ip, and request_uri.  It also uses memcache to set memcache keys containing MIN/MAX/AVG flup server usage on a per-minute basis.  
+
+This package is for our internal use right now and is incomplete in a number of ways, most glaringly the ability to set the memcache server address at the command line.  If I get time I'll make it more public-ready, but I'll also accept patches. :P  
+
